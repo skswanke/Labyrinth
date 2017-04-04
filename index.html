@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Authors: -->
+    <title>CS205 Final Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- javaScript links -->
+    <script src="js/tile.js"></script>
+    <script src="js/hand.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<header class="header">
+    <h1><b>Labyrinth</b></h1>
+</header>
+
+<body>
+    <div class="col-sm-12">
+        <h2 id="turn-indicator">Red's Turn</h2>
+    </div>
+    <div class="left-panel col-sm-3">
+        <div>
+            <div class="col-sm-12">
+                <h2 id="instructions">Place the tile</h2>
+            </div>
+            <div class="col-sm-12 outer-cell-container">
+
+                <div id="outer-cell" class="outer-cell"><img class="cell" src="" width="100" height="100"></div>
+            </div>
+            <div class="col-sm-12"><i>Press r to rotate</i></div>
+        </div>
+    </div>
+    <div class="board col-sm-6" id="board">
+        <div class="row0 row">
+            <div id="00" class="cell row0 column0"><img src="" width="100" height="100"></div>
+            <div id="01" class="cell row0 column1"><img src="" width="100" height="100"></div>
+            <div id="02" class="cell row0 column2"><img src="" width="100" height="100"></div>
+            <div id="03" class="cell row0 column3"><img src="" width="100" height="100"></div>
+            <div id="04" class="cell row0 column4"><img src="" width="100" height="100"></div>
+            <div id="05" class="cell row0 column5"><img src="" width="100" height="100"></div>
+            <div id="06" class="cell row0 column6"><img src="" width="100" height="100"></div>
+        </div>
+        <div class="row1 row">
+            <div id="10" class="cell row1 column0"><img src="" width="100" height="100"></div>
+            <div id="11" class="cell row1 column1"><img src="" width="100" height="100"></div>
+            <div id="12" class="cell row1 column2"><img src="" width="100" height="100"></div>
+            <div id="13" class="cell row1 column3"><img src="" width="100" height="100"></div>
+            <div id="14" class="cell row1 column4"><img src="" width="100" height="100"></div>
+            <div id="15" class="cell row1 column5"><img src="" width="100" height="100"></div>
+            <div id="16" class="cell row1 column6"><img src="" width="100" height="100"></div>
+        </div>
+        <div class="row2 row">
+            <div id="20" class="cell row2 column0"><img src="" width="100" height="100"></div>
+            <div id="21" class="cell row2 column1"><img src="" width="100" height="100"></div>
+            <div id="22" class="cell row2 column2"><img src="" width="100" height="100"></div>
+            <div id="23" class="cell row2 column3"><img src="" width="100" height="100"></div>
+            <div id="24" class="cell row2 column4"><img src="" width="100" height="100"></div>
+            <div id="25" class="cell row2 column5"><img src="" width="100" height="100"></div>
+            <div id="26" class="cell row2 column6"><img src="" width="100" height="100"></div>
+        </div>
+        <div class="row3 row">
+            <div id="30" class="cell row3 column0"><img src="" width="100" height="100"></div>
+            <div id="31" class="cell row3 column1"><img src="" width="100" height="100"></div>
+            <div id="32" class="cell row3 column2"><img src="" width="100" height="100"></div>
+            <div id="33" class="cell row3 column3"><img src="" width="100" height="100"></div>
+            <div id="34" class="cell row3 column4"><img src="" width="100" height="100"></div>
+            <div id="35" class="cell row3 column5"><img src="" width="100" height="100"></div>
+            <div id="36" class="cell row3 column6"><img src="" width="100" height="100"></div>
+        </div>
+        <div class="row4 row">
+            <div id="40" class="cell row4 column0"><img src="" width="100" height="100"></div>
+            <div id="41" class="cell row4 column1"><img src="" width="100" height="100"></div>
+            <div id="42" class="cell row4 column2"><img src="" width="100" height="100"></div>
+            <div id="43" class="cell row4 column3"><img src="" width="100" height="100"></div>
+            <div id="44" class="cell row4 column4"><img src="" width="100" height="100"></div>
+            <div id="45" class="cell row4 column5"><img src="" width="100" height="100"></div>
+            <div id="46" class="cell row4 column6"><img src="" width="100" height="100"></div>
+        </div>
+        <div class="row5 row">
+            <div id="50" class="cell row5 column0"><img src="" width="100" height="100"></div>
+            <div id="51" class="cell row5 column1"><img src="" width="100" height="100"></div>
+            <div id="52" class="cell row5 column2"><img src="" width="100" height="100"></div>
+            <div id="53" class="cell row5 column3"><img src="" width="100" height="100"></div>
+            <div id="54" class="cell row5 column4"><img src="" width="100" height="100"></div>
+            <div id="55" class="cell row5 column5"><img src="" width="100" height="100"></div>
+            <div id="56" class="cell row5 column6"><img src="" width="100" height="100"></div>
+        </div>
+        <div class="row6 row">
+            <div id="60" class="cell row6 column0"><img src="" width="100" height="100"></div>
+            <div id="61" class="cell row6 column1"><img src="" width="100" height="100"></div>
+            <div id="62" class="cell row6 column2"><img src="" width="100" height="100"></div>
+            <div id="63" class="cell row6 column3"><img src="" width="100" height="100"></div>
+            <div id="64" class="cell row6 column4"><img src="" width="100" height="100"></div>
+            <div id="65" class="cell row6 column5"><img src="" width="100" height="100"></div>
+            <div id="66" class="cell row6 column6"><img src="" width="100" height="100"></div>
+        </div>
+    </div>
+    <div class="right-panel col-sm-3">
+        <div>
+            <div class="col-sm-12">
+                <h2>Treasure</h2>
+            </div>
+            <div class="current-treasure col-sm-12"><img src="" id="current-treasure" width="100" height="100"></div>
+        </div>
+    </div>
+</body>
+
+</html>

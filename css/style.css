@@ -1,0 +1,92 @@
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    margin: 1px;
+    background-color: #3c943a;
+}
+
+.header {
+    padding-top: 32px!important;
+    padding-bottom: 2px!important;
+    text-align: center!important;
+    background-color: rgba(15, 204, 186, 0.48);
+}
+
+.tag {
+    background-color: #FF9800;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+body {
+    background-color: #cccccc;
+    background-attachment: fixed;
+}
+
+#board {
+    padding-top: 10px;
+}
+
+.cell {
+    position: relative;
+}
+
+#red,
+#blue {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.treasure {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: transparent;
+}
+
+div.row0.column0 {
+    background-color: #985858;
+}
+
+div.row6.column6 {
+    background-color: #638caf;
+}
+
+.locked {
+    background-color: #807c77
+}
+
+.left-panel,
+.right-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 712px;
+}
+
+.outer-cell {
+    position: relative;
+    width: 100px;
+}
+
+.outer-cell-container,
+.current-treasure {
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+i {
+    display: block;
+    text-align: center;
+}
