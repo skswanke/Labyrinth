@@ -10,6 +10,11 @@ body {
     overflow: hidden;
 }
 
+.h1 {   
+    margin-top: 25%;
+    text-align: center;
+}
+
 .pyro>.before,
 .pyro>.after {
     position: absolute;
